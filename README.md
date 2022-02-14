@@ -52,4 +52,4 @@ README〜ER図作成：2/ 10 〆切
 https://www.figma.com/file/XO5fPQHDiojmKkLoNeWMIj/expressive-writing?node-id=0%3A1
 
 ## ER図
-https://drive.google.com/file/d/1bUiYyL4kBcUItQxFo9gQAg68JXdwvS6q/view?usp=sharing
+https://drive.google.com/file/d/1hWEJdohpFm0lcxCQTuQkUgL0kcjv138-/view?usp=sharing
