@@ -50,3 +50,6 @@ README〜ER図作成：2/ 10 〆切
 
 ## 画面遷移図
 https://www.figma.com/file/XO5fPQHDiojmKkLoNeWMIj/expressive-writing?node-id=0%3A1
+
+## ER図
+https://drive.google.com/file/d/1louYzr-1CVxb-hy4w4Uwd4N1fj3bbXTs/view?usp=sharing
