@@ -45,6 +45,8 @@ group :development do
   # rubocopの追加
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
+  # rails_best_practicesの追加
+  gem 'rails_best_practices'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
