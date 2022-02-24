@@ -1,7 +1,13 @@
 # This file overrides https://github.com/bbatsov/rubocop/blob/master/config/default.yml
 
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
 AllCops:
   Exclude:
+    - 'tmp/**/*'
     - 'vendor/**/*'
     - 'db/**/*'
     - 'bin/**/*'
@@ -9,59 +15,47 @@ AllCops:
     - 'node_modules/**/*'
   DisplayCopNames: true
 
-Layout/MultilineBlockLayout:
-  Exclude:
-    - 'spec/**/*_spec.rb'
-
-Metrics/AbcSize:
-  Max: 25
-
-Metrics/BlockLength:
-  Max: 30
-  Exclude:
-    - 'Gemfile'
-    - 'config/**/*'
-    - 'spec/**/*_spec.rb'
-
-Metrics/ClassLength:
-  CountComments: false
-  Max: 300
-
-Metrics/CyclomaticComplexity:
-  Max: 30
-
-Metrics/LineLength:
-  Enabled: false
-
-Metrics/MethodLength:
-  CountComments: false
-  Max: 30
-
-Naming/AccessorMethodName:
-  Exclude:
-    - 'app/controllers/**/*'
-
+# 日本語でのコメントを許可
 Style/AsciiComments:
   Enabled: false
 
-Style/BlockDelimiters:
-  Exclude:
-    - 'spec/**/*_spec.rb'
-
+# Admin::BaseControllerのような書き方を許可
 Style/ClassAndModuleChildren:
   Enabled: false
 
-Style/Documentation:
-  Enabled: false
-
+# frozen_string_literal: trueはなくていい
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/IfUnlessModifier:
+# each_key, value, transform_keys, valueを使用する
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+
+# クラスにコメントを残さない
+Style/Documentation:
   Enabled: false
 
-Style/WhileUntilModifier:
-  Enabled: false
+# コントローラのメソッド名に「set_」「get_」を許可
+Naming/AccessorMethodName:
+  Exclude:
+    - "app/controllers/**/*"
 
-Bundler/OrderedGems:
-  Enabled: false
+# 一行の長さは100字まで。コメントは制限しない
+Metrics/LineLength:
+  Max: 100
+  IgnoredPatterns: ['\A#']
+  Exclude:
+    - "db/migrate/*.rb"
+
+# メソッドの行数を20行までにする
+Metrics/MethodLength:
+  CountComments: false
+  Max: 20
+
+# ABC sizeは緩めにする
+Metrics/AbcSize:
+  Max: 30 # default 15
