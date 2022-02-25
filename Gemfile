@@ -36,7 +36,7 @@ group :development, :test do
   gem 'pry-rails'
   # RSpecなど
   gem 'factory_bot_rails'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 5.0.0'
 end
 
 group :development do
@@ -47,14 +47,15 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
   # デバッグ用
   gem 'better_errors'
   gem 'binding_of_caller'
-  # フォーマッター
-  gem 'rails_best_practices'
+  # rubocopの追加
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
