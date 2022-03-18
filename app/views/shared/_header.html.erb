@@ -1,5 +1,17 @@
-<header>
-  <div>
-    <p>temporary header</p>
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark p-1 sticky-top py-0">
+  <div class="container">
+    <%= link_to root_path, class: 'navbar-brand' do %>
+      <h1>OutpotYourFeeling</h1>
+    <% end %>
+    <div class="collapse navbar-collapse show" id="navbarDark">
+      <ul class="navbar-nav ms-auto mb-2  mb-xl-0">
+        <li class="nav-item nav-link">
+          <%= link_to "MyPage", "#" %>
+        </li>
+        <li class="nav-item nav-link">
+          <%= link_to 'ログアウト', logout_path, method: :delete %>
+        </li>
+      </ul>
+    </div>
   </div>
-</header>
+</nav>
