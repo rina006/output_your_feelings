@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <h1>ユーザー登録</h1>
+      <h1><%= t '.title' %></h1>
       <%= form_with model: @user, local: true do |f| %>
         <div class="form-group">
           <%= f.label :name %>
@@ -19,10 +19,10 @@
           <%= f.label :password_confirmation %>
           <%= f.password_field :password_confirmation, class: 'form-control' %>
         </div>
-        <%= f.submit '登録', class: 'btn btn-primary' %>
+        <%= f.submit (t 'defaults.register'), class: 'btn btn-primary' %>
       <% end %>
       <div class='text-center'>
-        <%= link_to 'ログイン', login_path %>
+        <%= link_to (t 'defaults.login'), login_path %>
       </div>
     </div>
   </div>
