@@ -3,10 +3,24 @@
     <%= link_to root_path, class: 'navbar-brand' do %>
       <h1>OutpotYourFeeling</h1>
     <% end %>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse show" id="navbarDark">
       <ul class="navbar-nav ms-auto mb-2  mb-xl-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ExpressiveWriting
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="dropdown-item">
+              <%= link_to "筆記開示一覧", articles_path, class: 'dropdown-item' %>
+            </li>
+            <li><a class="dropdown-item" href="#">筆記開示作成</a></li>
+          </ul>
+        </li>
         <li class="nav-item nav-link">
-          <%= link_to "MyPage", "#" %>
+          <%= link_to "MyPage", "#", class: 'nav-link' %>
         </li>
         <li class="nav-item nav-link">
           <%= link_to (t 'defaults.logout'), logout_path, class: 'nav-link', method: :delete %>

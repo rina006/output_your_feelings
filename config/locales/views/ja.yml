@@ -3,6 +3,8 @@ ja:
     login: 'ログイン'
     register: '新規登録'
     logout: 'ログアウト'
+    message:
+      require_login: 'ログインしてください'
   users:
     new:
       title: '新規登録'
@@ -19,3 +21,7 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
+  articles:
+    index:
+      title: '筆記開示一覧'
+      no_result: '筆記開示がありません'
