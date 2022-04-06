@@ -1,5 +1,14 @@
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
+<div class="col-sm-12 col-lg-4 mb-3">
+  <div id="article-id-<%= article.id %>">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">
+            <%= article.title %>
+          </a>
+        </h4>
+        <p class="card-text"><%= article.body %></p>
+      </div>
+    </div>
   </div>
 </div>
