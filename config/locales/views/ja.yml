@@ -27,3 +27,5 @@ ja:
     index:
       title: '筆記開示一覧'
       no_result: '筆記開示がありません'
+    show:
+      title: '筆記開示詳細'
