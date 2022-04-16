@@ -21,6 +21,26 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  def edit
+    @article = current_user.articles.find(params[:id])
+  end
+
+  def update
+    @article = current_user.articles.find(params[:id])
+    if @article.update(article_params)
+      redirect_to @article, success: t('defaults.message.updated', item: Article.model_name.human)
+    else
+      flash.now['danger'] = t('defaults.message.not_updated', item: Article.model_name.human)
+      render :edit
+    end
+  end
+
+  def destroy
+    @article = current_user.articles.find(params[:id])
+    @article.destroy!
+    redirect_to articles_path, success: t('defaults.message.deleted', item: Article.model_name.human)
+  end
+
   private
 
   def article_params

@@ -7,6 +7,10 @@ ja:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
       not_created: "%{item}を作成できませんでした"
+      updated: "投稿を更新しました"
+      not_updated: "%{item}を更新できませんでした"
+      deleted: "%{item}を削除しました"
+      delete_confirm: '削除しますか？'
   users:
     new:
       title: '新規登録'
@@ -29,3 +33,5 @@ ja:
       no_result: '筆記開示がありません'
     show:
       title: '筆記開示詳細'
+    edit:
+      title: '筆記開示編集'

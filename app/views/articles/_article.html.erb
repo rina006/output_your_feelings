@@ -5,6 +5,10 @@
         <h4 class="card-title">
           <%= link_to article.title, article_path(article) %>
         </h4>
+        <% if article.user_id == current_user.id %>
+          <td><%= link_to 'Edit', edit_article_path(article) %></td>
+          <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
         <p class="card-text"><%= article.body %></p>
       </div>
     </div>
