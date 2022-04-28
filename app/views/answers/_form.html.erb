@@ -1,0 +1,8 @@
+<%= form_with model: answer, local: true do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="form-group">
+    <label for="question1">Q1. 今日1日の流れを記入してください</label>
+    <%= f.text_area :body, class: 'form-control', rows: 10 %>
+  </div>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>

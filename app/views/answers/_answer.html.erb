@@ -1,0 +1,12 @@
+<div class="col-sm-12 col-lg-4 mb-3">
+  <div id="answer-id-<%= answer.id %>">
+    <div class="card">
+      <div class="card-body">
+        <% if answer.user_id == current_user.id %>
+          <p class="card-text"><%= answer.body %></p>
+        <% else %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
