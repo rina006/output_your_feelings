@@ -3,6 +3,7 @@ ja:
     login: 'ログイン'
     register: '新規登録'
     logout: 'ログアウト'
+    answer: '回答'
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"

@@ -2,8 +2,7 @@
    <div class="row">
      <div class="col-lg-8 offset-lg-2">
        <h1>質問作成フォーム</h1>
-       <%= render 'questions/question', question: @question %>
+       <%= render 'form', { question: @question } %>
      </div>
    </div>
-   <%= render 'answers/form', { question: @question, answer: @answer } %>
  </div>
