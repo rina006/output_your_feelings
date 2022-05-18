@@ -11,3 +11,5 @@ ja:
       article:
         title: 'タイトル'
         body: '本文'
+      answer:
+        try: 'お試し'

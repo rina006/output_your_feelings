@@ -1,0 +1,19 @@
+<div class="container">
+  <header class="jumbotron my-4">
+    <h1 class="display-3">Try</h1>
+  </header>
+  <div class="row text-center">
+    <% @questions.each do |question| %>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <p class="card-text"><%= question.content %></p>
+          </div>
+          <div class="card-footer">
+            <%= link_to '筆記開示してみる', new_answer_path(question) %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
