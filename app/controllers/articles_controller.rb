@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all.includes(:user).order(created_at: :desc)
+    @articles = Article.where(user_id: current_user.id).includes(:user).order("created_at DESC")
   end
   
   def new

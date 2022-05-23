@@ -6,8 +6,7 @@
         <div class="card-body">
           <div class='col-md-9'>
             <h3 class="card-title"><%= @article.title %></h3>
-            <h5 class="card-title">user name: <%= @article.user.name %></h5>
-            <h5 class="card-title">date: <%= @article.created_at %></h5>
+            <h5 class="card-title"><%= @article.created_at %></h5>
             <p class="card-text"><%= @article.body %></p>
           </div>
         </div>
