@@ -1,3 +1,23 @@
+/* ヘッダーに関するスタイル */
+.navbar {
+  background-color: white;
+}
+
+.container {
+  
+  .title{
+    font-family: Georgia, serif;
+    color: black;
+  }
+
+  .nav-link {
+    font-family: "YuMincho";
+    color: black;
+  }
+}
+
+/* トップページ画像に関するスタイル */
+
 .top-wrapper {
     background-image: image-url("top01.jpg");
     height: calc(100vh - 134px);
@@ -20,6 +40,9 @@
       }
     }
   }
+
+
+/* トップページに関するスタイル */
 
 .expressivewriting {
   background-color: #f0e9ec;
