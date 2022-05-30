@@ -1,5 +1,5 @@
 .top-wrapper {
-    background-image: image-url("top.jpg");
+    background-image: image-url("top01.jpg");
     height: calc(100vh - 134px);
     position: relative;
     background-position: center;
@@ -12,10 +12,108 @@
       width: 100%;
       text-align: center;
       font-size: 3rem;
-      color: white;
-  
+      font-family: Georgia, serif;
+      color: black;
+
       @media screen and (max-width: 767px) {
         font-size: 2.0rem;
       }
     }
   }
+
+.expressivewriting {
+  background-color: #f0e9ec;
+
+  .title {
+    font-family: Georgia, serif;
+    color: black;
+    font-weight: bold;
+  }
+
+  .title-jp {
+    font-family: "YuMincho";
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-jp:before, .title-jp:after {
+    border-top: 1px solid;
+    content: "";
+    width: 3em;
+  }
+  .title-jp:before {
+    margin-right: 1em; 
+  }
+  .title-jp:after {
+    margin-left: 1em;
+  }
+  
+  .text {
+    margin-top: 30px;
+    font-family: "YuMincho";
+    color: black;
+  }
+
+  .explanation{
+    padding-top: 50px;
+
+  }
+
+  .way {
+    padding-top: 50px;
+
+    .card {
+      margin-top: 70px;
+      margin-right: 10px;
+      margin-bottom: 15px;
+      margin-left: 20px;
+      height: 150px;
+    }
+
+    .card-title {
+      font-family: "YuMincho";
+      color: black;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-family: "YuMincho";
+      color: black;
+    }
+  }
+
+  .MyEmotion {
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    .description {
+      font-family: "YuMincho";
+      color: black;
+    }
+
+    .paragraph {
+      margin: 4em auto;
+      padding: 1em;
+      width: 45%;
+      border: 1px solid black; /* 枠線 */
+     }
+
+    .subtitle {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-family: "YuMincho";
+      font-size: x-large;
+      border-bottom: 1px solid black;
+	    width: 170px;
+	    margin-left: auto; /* 中央寄せにするため */
+	    margin-right: auto; /* 中央寄せにするため */
+      color: black;
+    }
+
+    .text {
+      padding-bottom: 30px;
+     }
+  }
+}
