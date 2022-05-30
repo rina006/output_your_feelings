@@ -4,7 +4,6 @@
 }
 
 .container {
-  
   .title{
     font-family: Georgia, serif;
     color: black;
@@ -23,7 +22,7 @@
     height: calc(100vh - 134px);
     position: relative;
     background-position: center;
-  
+
     .top-inner-text {
       position: absolute;
       top: 50%;
@@ -40,7 +39,6 @@
       }
     }
   }
-
 
 /* トップページに関するスタイル */
 
@@ -72,7 +70,7 @@
   .title-jp:after {
     margin-left: 1em;
   }
-  
+
   .text {
     margin-top: 30px;
     font-family: "YuMincho";
@@ -137,6 +135,28 @@
 
     .text {
       padding-bottom: 30px;
-     }
+    }
   }
+}
+
+/* ヘッダーに関するスタイル */
+
+.information {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  text-align: center;
+  word-spacing: 3em;
+
+  .text-jp{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "YuMincho";
+    color: black;
+  }
+}
+
+.text {
+  padding-bottom: 20px;
+  font-family: Georgia, serif;
+  color: black;
 }
