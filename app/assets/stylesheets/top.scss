@@ -139,7 +139,7 @@
   }
 }
 
-/* ヘッダーに関するスタイル */
+/* Footerに関するスタイル */
 
 .information {
   padding-top: 30px;
@@ -158,5 +158,22 @@
 .text {
   padding-bottom: 20px;
   font-family: Georgia, serif;
+  color: black;
+}
+
+/* Qestionに関するスタイル */
+
+.title {
+  font-family: Georgia, serif;
+  color: black;
+}
+
+.card {
+  font-family: "YuMincho";
+  color: black;
+}
+
+.answer {
+  font-family: "YuMincho";
   color: black;
 }
