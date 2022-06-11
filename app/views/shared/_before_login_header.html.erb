@@ -1,9 +1,12 @@
-<nav class="navbar navbar-expand-xl navbar-ligh bg-ligh p-1 sticky-top py-0">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top py-0">
   <div class="container">
     <%= link_to root_path, class: 'navbar-brand' do %>
       <h1 class="title">MyEmotion</h1>
     <% end %>
-    <div class="collapse navbar-collapse show" id="navbarDark">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLight" aria-controls="navbarLight" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarLight">
       <ul class="navbar-nav ms-auto mb-2  mb-xl-0">
         <li class="nav-item nav-link">
           <%= link_to (t 'defaults.login'), login_path ,class: 'nav-link' %>
