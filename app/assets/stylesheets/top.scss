@@ -19,27 +19,27 @@
 /* トップページ画像に関するスタイル */
 
 .top-wrapper {
-    background-image: image-url("top01.jpg");
-    height: calc(100vh - 134px);
-    position: relative;
-    background-position: center;
+  background-image: image-url("top01.jpg");
+  height: calc(100vh - 134px);
+  position: relative;
+  background-position: center;
 
-    .top-inner-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      text-align: center;
-      font-size: 3rem;
-      font-family: Georgia, serif;
-      color: black;
+  .top-inner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia, serif;
+    color: black;
 
-      @media screen and (max-width: 767px) {
-        font-size: 2.0rem;
-      }
+    @media screen and (max-width: 767px) {
+      font-size: 2.0rem;
     }
   }
+}
 
 /* トップページに関するスタイル */
 
@@ -214,6 +214,20 @@
 }
 
 .signup{
+  font-family: "YuMincho";
+  color: black;
+}
+
+/* Articleに関するスタイル */
+
+.create {
+  line-height: 3.0;
+  font-family: "YuMincho";
+  color: black;
+}
+
+.submit {
+  margin-top: 20px;
   font-family: "YuMincho";
   color: black;
 }
