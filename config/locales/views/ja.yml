@@ -4,6 +4,7 @@ ja:
     register: '新規登録'
     logout: 'ログアウト'
     answer: '回答'
+    create: '作成'
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -36,3 +37,6 @@ ja:
       title: '筆記開示詳細'
     edit:
       title: '筆記開示編集'
+    create:
+      title: 'タイトル'
+      body: '筆記開示を作成'

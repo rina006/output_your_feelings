@@ -1,29 +1,29 @@
-<nav class="navbar navbar-expand-xl navbar-ligh p-1 sticky-top py-0">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top py-0">
   <div class="container">
     <%= link_to root_path, class: 'navbar-brand' do %>
       <h1 class="title">MyEmotion</h1>
     <% end %>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLight" aria-controls="navbarLight" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse show" id="navbarDark">
-      <ul class="navbar-nav ms-auto mb-2  mb-xl-0">
+    <div class="collapse navbar-collapse" id="navbarLight">
+      <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
         <li class="nav-item nav-link">
           <%= link_to "お試し", questions_path, class: 'nav-link' %>
         </li>
         <li class="nav-item nav-link">
-          <%= link_to "筆記開示作成", "#", class: 'nav-link' %>
+          <%= link_to "筆記開示作成", new_article_path, class: 'nav-link' %>
         </li>
         <li class="nav-item nav-link">
-          <%= link_to "筆記開示一覧", "#", class: 'nav-link' %>
+          <%= link_to "筆記開示一覧", articles_path, class: 'nav-link' %>
         </li>
         <li class="nav-item dropdown nav-link">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            MyPage
+            マイページ
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li class="dropdown-item">
-              <%= link_to "Profile", "#", class: 'dropdown-item' %>
+              <%= link_to "プロフィール", "#", class: 'dropdown-item' %>
             </li>
             <li class="dropdown-item">
               <%= link_to (t 'defaults.logout'), logout_path, class: 'dropdown-item', method: :delete %>
