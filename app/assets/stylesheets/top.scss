@@ -231,3 +231,14 @@
   font-family: "YuMincho";
   color: black;
 }
+
+.container {
+  font-family: "YuMincho";
+  color: black;
+
+  .timer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+}
