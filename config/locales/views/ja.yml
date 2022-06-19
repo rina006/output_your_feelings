@@ -33,6 +33,8 @@ ja:
     index:
       title: '筆記開示一覧'
       no_result: '筆記開示がありません'
+      edit: '編集'
+      delete: '削除'
     show:
       title: '筆記開示詳細'
     edit:
