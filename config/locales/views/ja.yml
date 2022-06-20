@@ -42,3 +42,10 @@ ja:
     create:
       title: 'タイトル'
       body: '筆記開示を作成'
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: "最後 &raquo;"
+      previous: "&lsaquo; 前"
+      next: "次 &rsaquo;"
+      truncate: "..."
