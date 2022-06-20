@@ -270,3 +270,8 @@
   text-decoration: none;
   color: rgb(166, 65, 65);
 }
+
+.page-item.active .page-link {
+  background-color: rgb(42, 40, 40);
+  border-color: rgb(42, 40, 40);
+}
