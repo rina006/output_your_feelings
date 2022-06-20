@@ -250,3 +250,23 @@
 .pagination>li>a {          
   color: #696969;   /*文字の色を変える*/
 }
+
+.pagination {
+  justify-content: center;
+}
+
+.Titlelink {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(33, 36, 37);
+}
+
+.Editlink {
+  text-decoration: none;
+  color: rgb(65, 138, 166);
+}
+
+.Deletelink {
+  text-decoration: none;
+  color: rgb(166, 65, 65);
+}
