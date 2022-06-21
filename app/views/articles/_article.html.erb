@@ -3,11 +3,11 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">
-          <%= link_to article.title, article_path(article) %>
+          <%= link_to article.title, article_path(article),class: "Titlelink" %>
         </h4>
         <% if article.user_id == current_user.id %>
-          <td><%= link_to 'Edit', edit_article_path(article) %></td>
-          <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to (t 'articles.index.edit'), edit_article_path(article),class: "Editlink" %></td>
+          <td><%= link_to (t 'articles.index.delete'), article, method: :delete, data: { confirm: '削除しますか?' },class: "Deletelink" %></td>
         <% end %>
         <p class="card-text"><%= article.body %></p>
       </div>

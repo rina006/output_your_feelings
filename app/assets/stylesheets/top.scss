@@ -231,3 +231,47 @@
   font-family: "YuMincho";
   color: black;
 }
+
+.container {
+  font-family: "YuMincho";
+  color: black;
+
+  .timer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+}
+
+.link {
+  color: black;
+}
+
+.pagination>li>a {          
+  color: #696969;   /*文字の色を変える*/
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.Titlelink {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(33, 36, 37);
+}
+
+.Editlink {
+  text-decoration: none;
+  color: rgb(65, 138, 166);
+}
+
+.Deletelink {
+  text-decoration: none;
+  color: rgb(166, 65, 65);
+}
+
+.page-item.active .page-link {
+  background-color: rgb(42, 40, 40);
+  border-color: rgb(42, 40, 40);
+}

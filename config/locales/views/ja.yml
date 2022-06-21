@@ -33,6 +33,8 @@ ja:
     index:
       title: '筆記開示一覧'
       no_result: '筆記開示がありません'
+      edit: '編集'
+      delete: '削除'
     show:
       title: '筆記開示詳細'
     edit:
@@ -40,3 +42,10 @@ ja:
     create:
       title: 'タイトル'
       body: '筆記開示を作成'
+  views:
+    pagination:
+      first: "&laquo; 最初"
+      last: "最後 &raquo;"
+      previous: "&lsaquo; 前"
+      next: "次 &rsaquo;"
+      truncate: "..."
