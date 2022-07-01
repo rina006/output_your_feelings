@@ -2,6 +2,7 @@ ja:
   defaults:
     login: 'ログイン'
     register: '新規登録'
+    twitter: 'Twitterログイン'
     logout: 'ログアウト'
     answer: '回答'
     create: '作成'

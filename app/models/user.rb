@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   has_many :articles, dependent: :destroy
   has_many :answers, dependent: :destroy
+  has_many :authentications, :dependent => :destroy
+  accepts_nested_attributes_for :authentications
   
   validates :name, presence: true, length: { minimum: 2, maximum: 20 }
   validates :email, presence: true, uniqueness: true
