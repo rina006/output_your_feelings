@@ -6,6 +6,7 @@ ja:
     logout: 'ログアウト'
     answer: '回答'
     create: '作成'
+    password_forget: 'パスワードをお忘れの方'
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -30,6 +31,13 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+      submit: '送信'
+      success: 'メールを送信しました'
+    edit:
+      title: 'パスワードリセット'
   articles:
     index:
       title: '筆記開示一覧'

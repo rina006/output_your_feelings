@@ -235,3 +235,29 @@
   background-color: rgb(42, 40, 40);
   border-color: rgb(42, 40, 40);
 }
+
+/* パスワード再発行に関するスタイル */
+
+.password-apply {
+  text-align: center;
+}
+
+.subpassword-apply {
+  text-align: center;
+  padding-top: 15px;	
+  padding-bottom: 50px;
+}
+
+.password-reset {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.actions{
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.edit-link {
+  color: black;
+}

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   root 'static_pages#top'
 
   get 'terms', to: 'static_pages#terms'
@@ -18,4 +19,5 @@ Rails.application.routes.draw do
   resources :questions, only: %i[index new create] do
     resources :answers, only: %i[index new create]
   end
+  resources :password_resets, only: %i[new create edit update]
 end
