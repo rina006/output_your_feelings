@@ -20,4 +20,5 @@ Rails.application.routes.draw do
     resources :answers, only: %i[index new create]
   end
   resources :password_resets, only: %i[new create edit update]
+  resource :contacts, only: %i[new create]
 end

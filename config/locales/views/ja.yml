@@ -38,6 +38,13 @@ ja:
       success: 'メールを送信しました'
     edit:
       title: 'パスワードリセット'
+  contacts:
+    new:
+      name: 'お名前'
+      email: 'メールアドレス'
+      content: 'お問い合わせ内容'
+    create:
+      success: 'お問い合わせメールを送信しました'
   articles:
     index:
       title: '筆記開示一覧'
