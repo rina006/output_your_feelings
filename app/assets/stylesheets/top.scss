@@ -1,21 +1,3 @@
-/* ヘッダーに関するスタイル */
-.navbar {
-  background-color: white;
-  color: black;
-}
-
-.container {
-  .title{
-    font-family: Georgia, serif;
-    color: black;
-  }
-
-  .nav-link {
-    font-family: "YuMincho";
-    color: black;
-  }
-}
-
 /* トップページ画像に関するスタイル */
 
 .top-wrapper {
@@ -169,28 +151,6 @@
   }
 }
 
-/* Footerに関するスタイル */
-
-.information {
-  padding-top: 30px;
-  padding-bottom: 35px;
-  text-align: center;
-  word-spacing: 3em;
-
-  .text-jp{
-    display: inline-block;
-    text-decoration: none;
-    font-family: "YuMincho";
-    color: black;
-  }
-}
-
-.text {
-  padding-bottom: 20px;
-  font-family: Georgia, serif;
-  color: black;
-}
-
 /* Qestionに関するスタイル */
 
 .title {
@@ -274,4 +234,30 @@
 .page-item.active .page-link {
   background-color: rgb(42, 40, 40);
   border-color: rgb(42, 40, 40);
+}
+
+/* パスワード再発行に関するスタイル */
+
+.password-apply {
+  text-align: center;
+}
+
+.subpassword-apply {
+  text-align: center;
+  padding-top: 15px;	
+  padding-bottom: 50px;
+}
+
+.password-reset {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.actions{
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.edit-link {
+  color: black;
 }

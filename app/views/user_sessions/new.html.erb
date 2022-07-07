@@ -16,6 +16,10 @@
             <%= f.submit (t 'defaults.login'), class: 'btn btn-dark' %>
           </div>
         <% end %>
+        <div class='text-center'>
+          <%= link_to (t 'defaults.register'), new_user_path, class:'edit-link' %>
+          <%= link_to (t 'defaults.password_forget'), new_password_reset_path, class:'edit-link' %>
+      </div>
       </div>
     </div>
   </div>
