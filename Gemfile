@@ -28,6 +28,8 @@ gem 'sorcery'
 gem 'rails-i18n'
 # ページネーション
 gem 'kaminari'
+# 管理画面
+gem 'rails_admin', '~> 3.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
