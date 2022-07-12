@@ -7,11 +7,13 @@ RailsAdmin.config do |config|
   config.authenticate_with do
   #   warden.authenticate! scope: :user
     require_login
+
+    redirect_to root_path unless current_user.admin?
   end
   config.current_user_method(&:current_user)
 
   ## == CancanCan ==
-  # config.authorize_with :cancancan
+  config.authorize_with :cancancan
 
   ## == Pundit ==
   # config.authorize_with :pundit
