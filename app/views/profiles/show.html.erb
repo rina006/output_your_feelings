@@ -1,0 +1,8 @@
+<div class="container">
+  <h2 class="text-center"><%= t('.title') %></h2>
+  <div class="profiles">
+    <p>お名前：<%= current_user.name %></p>
+    <p>メールアドレス：<%= current_user.email %></p>
+    <%= link_to (t 'profiles.show.edit'), edit_profiles_path,class: "Editlink" %>
+  </div>
+</div>

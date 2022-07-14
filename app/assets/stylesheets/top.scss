@@ -261,3 +261,17 @@
 .edit-link {
   color: black;
 }
+
+/* プロフィールに関するスタイル */
+.text-center {
+  font-family: "YuMincho";
+  color: black;
+}
+
+.profiles {
+  text-align: center;
+  margin: 3em auto;
+  padding: 1em;
+  width: 65%;
+  border: 1px solid black; /* 枠線 */
+}

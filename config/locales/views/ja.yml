@@ -65,3 +65,13 @@ ja:
       previous: "&lsaquo; 前"
       next: "次 &rsaquo;"
       truncate: "..."
+  profiles:
+    show:
+      title: 'プロフィール'
+      edit: '編集'
+    edit:
+      title: 'プロフィール編集'
+      update: '更新'
+    update:
+      success: 'プロフィールを更新しました'
+      fail: 'プロフィールの更新に失敗しました'
