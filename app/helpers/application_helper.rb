@@ -9,7 +9,10 @@ module ApplicationHelper
       keywords: '筆記開示, Expressive Writing, ストレス軽減, リラックス, スッキリ',
       canonical: request.original_url,
       separator: '|',
+      icon: image_url('favicon.ico'),
       icon: [
+        { href: image_url('favicon.ico') },
+        { href: image_url('apple-touch-icon.png'), rel: 'apple-touch-icon' }
       ],
       og: {
         site_name: :site,
