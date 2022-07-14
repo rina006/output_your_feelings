@@ -31,6 +31,8 @@ gem 'kaminari'
 # 管理画面
 gem 'rails_admin', '~> 3.0'
 gem 'cancancan'
+# SEO
+gem 'meta-tags'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
