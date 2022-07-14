@@ -1,0 +1,18 @@
+<% content_for(:title, t('profiles.edit.title')) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <h2 class="text-center"><%= t('.title') %></h2>
+      <%= form_with model: @user, url: profiles_path, local: true do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control mb-3' %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control mb-3' %>
+        <div class="submit text-center">
+          <%= f.submit t('profiles.edit.update'), class: 'btn btn-dark' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
