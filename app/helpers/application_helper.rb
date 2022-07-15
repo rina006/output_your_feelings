@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def page_title(page_title = "")
+    base_title = "MyEmotion"
+  end
+
   def default_meta_tags
     {
       site: 'MyEmotion',
