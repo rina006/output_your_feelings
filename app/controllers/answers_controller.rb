@@ -10,6 +10,7 @@ class AnswersController < ApplicationController
 
   def create
     @answer = current_user.answers.build(answer_params)
+    @question = Question.find(params[:question_id])
     if @answer.save
       redirect_to questions_path, success: t('defaults.message.created', item: Answer.model_name.human)
     else

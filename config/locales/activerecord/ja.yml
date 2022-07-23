@@ -2,6 +2,8 @@ ja:
   activerecord:
     models:
       user: 'ユーザー'
+      article: '筆記開示'
+      answer: '回答'
     attributes:
       user:
         name: 'ユーザー名'
